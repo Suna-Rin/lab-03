@@ -19,7 +19,6 @@ public class City implements Serializable {
         return province;
     }
 
-    // —— 为“编辑”功能新增的 setter ——
     public void setName(String name) {
         this.name = name;
     }

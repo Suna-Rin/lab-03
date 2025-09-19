@@ -14,7 +14,6 @@ import java.util.ArrayList;
 
 public class CityArrayAdapter extends ArrayAdapter<City> {
 
-    // 讲义推荐：把 layoutRes 传 0，因为我们会自己覆盖 getView()
     public CityArrayAdapter(@NonNull Context context, @NonNull ArrayList<City> cities) {
         super(context, 0, cities);
     }

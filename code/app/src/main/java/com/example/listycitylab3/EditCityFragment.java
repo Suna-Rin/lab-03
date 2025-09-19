@@ -51,7 +51,6 @@ public class EditCityFragment extends DialogFragment {
         EditText editCity = view.findViewById(R.id.edit_text_city_text);
         EditText editProv = view.findViewById(R.id.edit_text_province_text);
 
-        // 预填当前城市数据
         Bundle args = requireArguments();
         City city = (City) args.getSerializable(ARG_CITY);
         int position = args.getInt(ARG_POSITION, -1);
@@ -69,7 +68,6 @@ public class EditCityFragment extends DialogFragment {
                     String newName = editCity.getText().toString().trim();
                     String newProv = editProv.getText().toString().trim();
 
-                    // 直接修改同一个对象（已在列表中），也可 new 一个再替换
                     city.setName(newName);
                     city.setProvince(newProv);
 

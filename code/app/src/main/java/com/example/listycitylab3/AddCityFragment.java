@@ -12,7 +12,6 @@ import androidx.fragment.app.DialogFragment;
 
 public class AddCityFragment extends DialogFragment {
 
-    // ---- 回调给 Activity（MainActivity 里 implements 的就是它）----
     public interface AddCityDialogListener {
         void addCity(City city);
     }
@@ -20,7 +19,6 @@ public class AddCityFragment extends DialogFragment {
     @NonNull
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
-        // 使用新增对话框的布局 fragment_add_city.xml
         View view = getLayoutInflater().inflate(R.layout.fragment_add_city, null);
         EditText cityEt = view.findViewById(R.id.add_text_city_text);
         EditText provEt = view.findViewById(R.id.add_text_province_text);

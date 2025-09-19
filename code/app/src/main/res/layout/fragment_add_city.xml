@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/add_text_city_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:paddingVertical="12dp"
+        android:inputType="textPersonName"
+        android:hint="@string/hint_city"
+        android:autofillHints="postalAddressLocality" />
+
+    <EditText
+        android:id="@+id/add_text_province_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:paddingVertical="12dp"
+        android:inputType="textCapCharacters"
+        android:maxLength="3"
+        android:hint="@string/hint_province"
+        android:autofillHints="addressRegion" />
+
+</LinearLayout>

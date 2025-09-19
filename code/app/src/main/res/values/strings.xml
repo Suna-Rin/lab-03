@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">ListyCityLab3</string>
+    <string name="hint_city">City</string>
+    <string name="hint_province">Province/State Code (e.g., AB, CA)</string>
+    <!-- Buttons -->
+    <string name="action_ok">OK</string>
+    <string name="action_cancel">Cancel</string>
+
+    <!-- Dialog titles -->
+    <string name="title_add_city">Add City</string>
+    <string name="title_edit_city">Edit City</string>
 </resources>
